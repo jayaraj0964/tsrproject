@@ -1,0 +1,47 @@
+.home1{
+ /* margin: 35px; */
+ width: 100%; 
+ /* height: 100%;  */
+ object-fit: cover;
+}
+
+.gif-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between GIFs */
+    max-width: 600px; /* Adjust the overall grid width */
+    margin: auto; /* Center the grid on the page */
+    row-gap: 50px;
+  }
+  
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Hidden by default */
+    z-index: 2;
+  }
+
+  .imageSection {
+    position: relative
+  }
+  
+  .imagetext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: none;
+  }
+  
+  .imageSection:hover .imagetext {
+    display: block; 
+  }
